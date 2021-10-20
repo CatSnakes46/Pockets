@@ -44,7 +44,7 @@ class TotalsDisplay extends Component {
               <br></br>
               <center>${this.state.budget - this.state.total}</center>
             </div>
-            <button id="editButton">Edit Budget</button>
+            <button className="spinButton" id="editButton">Edit Budget</button>
           {/* </center> */}
         </div>
       )

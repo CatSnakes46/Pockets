@@ -99,7 +99,7 @@ class FeedItem extends Component {
             <td className='item'>{transactions[i].category}</td>
             <td className='item'>${transactions[i].amount}</td>
             {/* cat-snake todo: all delete buttons should have unique ids */}
-            <button className='delete' id='editButton' onClick={this.delete(transactions[i])}>X</button>
+            <button className='delete' id={`deleteButton${i}`} onClick={this.delete(transactions[i])}>X</button>
           </tr>
         )
       }

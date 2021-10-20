@@ -79,7 +79,7 @@ button {
     
 }
 
-#editButton:hover {
+.spinButton:hover, .delete:hover {
     background-color: #5473869a;
 
     animation-duration: 2s;
@@ -88,7 +88,7 @@ button {
     animation-timing-function: linear;
 }
 
-#editButton:active {
+.spinButton:active, .delete:active {
     outline: 1px solid black;
     box-shadow: -1px -1px -1px black;
 }
