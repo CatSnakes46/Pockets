@@ -36,6 +36,16 @@ class MainContainer extends Component {
   //     })
   // };
 
+  /*
+  ITERATION PROJECT NOTES:
+  - Currently, this submit method is updating the state, but not re-rendering the components
+  - Possible causes: 
+      - setState is async 
+      - setState is not updating state correctly? 
+  - Possible solutions
+      - Wrap the entirety of submit() in a componentDidUpdate
+      - Add a callback function to setState to handle the async
+  */
     submit(){
       console.log('submit activated')
       if(document.getElementById('category').value !== "1"){
@@ -57,7 +67,7 @@ class MainContainer extends Component {
           // console.log(this.state);
           const transactions = data.data;
           console.log("console logging the return of post request in mainContainer.jsx :", transactions);
-          // // transactions.push(data);
+          //transactions.push(data);
           this.setState({
             transactions: transactions,
             total: data.total
