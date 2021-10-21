@@ -54,7 +54,7 @@ const TotalsDisplay = props => {
         <button className='editBgt' onClick={setTogglePop}>Edit Button</button>
       <Popup trigger={togglePopup} budget={budget} setTrigger={setTogglePop}>
       <div style={{marginTop: 10}}>
-      <input type='number' className='bgt-val' ref={textInput} placeholder='Set Budget Here' onChange={updateInput}/> <br/>
+      <input type='number' className='bgt-val' ref={textInput} placeholder='Set Budget Here' value={budget} onChange={updateInput}/> <br/>
       <button className='submit-btn' onClick={() => {setTogglePop(false); handleBudget()}}>Submit</button> <br/>
       </div>
       </Popup>
