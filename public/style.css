@@ -297,6 +297,8 @@ div.popup-inner {
   width: 10%;
   max-width: 640px;
   background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 .submit-btn {
