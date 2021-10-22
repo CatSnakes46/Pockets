@@ -294,27 +294,32 @@ div.popup {
 div.popup-inner {
   position: relative;
   padding: 32px;
-  width: 50%;
+  width: 10%;
   max-width: 640px;
   background-color: #fff;
 }
 
-button.submit-btn {
+.submit-btn {
   display: flex;
   justify-content: center;
   cursor: pointer;
+  transform: translate(15%, 100%);
 }
 
-button.editBgt:hover {
+.submit-btn:hover {
+  background-color: #5473869a;
+}
+
+.editBgt:hover {
   background-color: #5473869a;
   cursor: pointer;
 }
 
 input.bgt-val {
   display: flex;
-  justify-content: center;
   border-radius: 3px;
   outline: none;
+  transform: translate(2%, 100%);
 }
 
 input.close-btn {
