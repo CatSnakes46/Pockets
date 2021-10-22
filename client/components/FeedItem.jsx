@@ -86,25 +86,6 @@ to include the new data
         .catch((err) => console.log(err));
     };
 
-  // As soon as the page loads, invoke the GET request for transcations in the DB.
-  // componentDidMount() {
-  //   this.getData();
-
-  // setInterval(this.getData(), 1000);
-  // fetch('http://localhost:8080/api/transactions')
-  //   .then( response => response.json())
-  //   .then( data => {
-  //     // console.log('received data', data);
-  //     this.setState({
-  //       transactions: data.data,
-  //       total: data.total
-  //     });
-  //     // console.log(this.state);
-  //   })
-  //   .catch(err => {
-  //     console.log('error fetching transaction data', err);
-  //   });
-
   //renderRows helper function
   function renderRows() {
     const rows = [];
