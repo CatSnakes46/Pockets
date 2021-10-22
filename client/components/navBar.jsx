@@ -23,13 +23,13 @@ const NavBar = () => {
 
   return (
     <div>
-      <button className="log" onClick={handleLogin}>
+      <button className="login" onClick={handleLogin}>
         Login
       </button>
-      <button className="log" onClick={handleLogout}>
+      <button className="logout" onClick={handleLogout}>
         Log Out
       </button>
-      <button className="log" onClick={handleSignup}>
+      <button className="signup" onClick={handleSignup}>
         Signup
       </button>
     </div>

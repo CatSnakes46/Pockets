@@ -36,7 +36,7 @@ const TotalsDisplay = props => {
   return (
     <div className = "totalsDisplay">
       {/* <center> */}
-        <div>
+        <div className='budget-text'>
           Budget:
           <br></br>
           ${Number(budget).toFixed(2)}

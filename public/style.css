@@ -72,58 +72,16 @@ button {
   padding: 5px 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: transform 80ms ease-in;
+  transition: all 0.2 ease-in-out;
   box-shadow: 1px 1px 1px black;
   height: 25px;
   width: 143px;
-}
-
-#editButton:hover {
-  background-color: #5473869a;
-
-  animation-duration: 2s;
-  animation-name: spin;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-#editButton:active {
-  outline: 1px solid black;
-  box-shadow: -1px -1px -1px black;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(720deg);
-  }
+  outline: none;
 }
 
 #submitButton:hover {
   background-color: #5473869a;
-
-  animation-duration: 2s;
-  animation-name: pulse;
-  animation-iteration-count: infinite;
-}
-
-@keyframes pulse {
-  from {
-    height: 25px;
-    width: 143px;
-  }
-  50% {
-    margin-left: -10px;
-    height: 35px;
-    width: 153px;
-    transform: translateX(5px) translateY(-5px);
-  }
-  to {
-    height: 25px;
-    width: 143px;
-  }
+  cursor: pointer;
 }
 
 #submitButton:active {
@@ -138,6 +96,23 @@ button {
   width: 30px;
   height: 20px;
   right: 100px;
+  transform: translateX(130%);
+}
+
+.delete:hover {
+  background-color: #5473869a;
+
+  animation-duration: 2s;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: translateX(130%);
+  cursor: pointer;
+}
+
+.delete:active {
+  outline: 1px solid black;
+  box-shadow: -1px -1px -1px black;
 }
 
 .input {
@@ -149,6 +124,11 @@ button {
 
 #category {
   height: 28px;
+  transform: translate(6%);
+}
+
+#name {
+  transform: translate(-5%);
 }
 
 .inputContainer {
@@ -322,6 +302,12 @@ div.popup-inner {
 button.submit-btn {
   display: flex;
   justify-content: center;
+  cursor: pointer;
+}
+
+button.editBgt:hover {
+  background-color: #5473869a;
+  cursor: pointer;
 }
 
 input.bgt-val {
@@ -340,4 +326,27 @@ input.close-btn {
   border: none;
   outline: none;
   background: transparent;
+}
+
+#amount {
+  transform: translateX(10%);
+}
+
+.logout {
+  float: right;
+}
+
+.signup:hover {
+  background-color: #5473869a;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #5473869a;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: #5473869a;
+  cursor: pointer;
 }

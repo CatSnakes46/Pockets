@@ -124,9 +124,9 @@ to include the new data
       rows.push(
         <tr className="row" key={i}>
           <td className="item">{transactions[i].date}</td>
-          <td className="item">{transactions[i].name}</td>
-          <td className="item">{transactions[i].category}</td>
-          <td className="item">${transactions[i].amount}</td>
+          <td className="item" id='name'>{transactions[i].name}</td>
+          <td className="item" id='category'>{transactions[i].category}</td>
+          <td className="item" id='amount'>${transactions[i].amount}</td>
           {/* cat-snake todo: all delete buttons should have unique ids */}
           <td className="item"><button
             className="delete"
